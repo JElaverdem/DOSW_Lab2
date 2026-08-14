@@ -5,9 +5,9 @@ public class Product {
     private String description;
     private static int globalId = 1;
     private int id;
-    private int price;
+    private double price;
 
-    public Product (String nameString, String descriptionString, int priceInt){
+    public Product (String nameString, String descriptionString, double priceDouble){
         this.name = nameString;
         this.description = descriptionString;
         this.price = priceInt;

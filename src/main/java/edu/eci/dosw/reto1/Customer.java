@@ -1,9 +1,7 @@
 package main.java.edu.eci.dosw.reto1;
 
 public class Customer {
-<<<<<<< Updated upstream
-    
-=======
+
   private String name;
   private Discount discount;
   private static int generalId=1;
@@ -37,5 +35,5 @@ public class Customer {
     return this.name;
   }
 
->>>>>>> Stashed changes
+
 }
