@@ -5,7 +5,11 @@ public class FrequentDiscount implements Discount{
 
     }
 
-    public int execute(Cart cart){
+    public double execute(Cart cart){
         return cart.getTotal() - cart.getTotal() * 0.1;
+    }
+
+    public double getDiscount(Cart cart){
+        return cart.getTotal() * 0.1;
     }
 }

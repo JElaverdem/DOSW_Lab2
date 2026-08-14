@@ -10,12 +10,12 @@ public class Product {
     public Product (String nameString, String descriptionString, double priceDouble){
         this.name = nameString;
         this.description = descriptionString;
-        this.price = priceInt;
+        this.price = priceDouble;
         this.id = globalId;
         globalId ++; 
     }
 
-    public int getPrice(){
+    public double getPrice(){
         return this.price;
     }
 

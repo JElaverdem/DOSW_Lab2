@@ -5,7 +5,11 @@ public class NoDiscount implements Discount{
 
     }
 
-    public int execute(Cart cart){
+    public double execute(Cart cart){
         return cart.getTotal();
+    }
+
+    public double getDiscount(Cart cart){
+        return 0;
     }
 }

@@ -1,4 +1,5 @@
 package main.java.edu.eci.dosw.reto1;
+import java.util.ArrayList;
 
 public class Customer {
 
@@ -22,9 +23,18 @@ public class Customer {
         this.discount=new NoDiscount();
 
   }}
-  public int applyDiscount(){
+  public double applyDiscount(){
     return this.discount.execute(getCart());
   }
+
+  public double getDiscount(){
+    return this.discount.getDiscount(getCart());
+  }
+
+  public double getTotalCart(){
+    return getCart().getTotal();
+  }
+  
   public int getId(){
     return this.id;
   }
@@ -35,5 +45,11 @@ public class Customer {
     return this.name;
   }
 
+  public void addItem(Product item, int quantity){
+    getCart().addItem(item, quantity);
+  }
 
+  public ArrayList<Product> getItems(){
+    
+  }
 }
