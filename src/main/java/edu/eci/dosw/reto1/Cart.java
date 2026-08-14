@@ -1,32 +1,28 @@
 package main.java.edu.eci.dosw.reto1;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.hashMap;
+import java.util.Map;
 
 public class Cart {
-    public ArrayLis<CartItem> items;
+    public Map<> items;
     public Cart(){
-    items = new ArrayList<>();
+    this.items = new hashMap<>();
     }
     
-    public int getTotal() {
-    double totalPrice = 0;
-   return items.stream()
-               .mapToDouble(item -> item.getproduct().getPrice()* item.getQuantity())
-                .sum();}
     public void addItem(Product product, int quantity) {
-    for (CartItem item : items) {
-        if (item.getProduct().equals(product)) {
-            item.setQuantity(item.getQuantity() + quantity);
-            return;
-        }
-    }  }
+        items.put(product, items.getOrDefault(product, 0+quantity));
+    }
+    public int getquantity(Product product) {
+        return items.getOrDefault(product, 0);
+    }
     public void removeItem(Product product) {
-    for (CartItem item : items) {
-            if (item.getProduct().equals(product)) {
-                items.remove(item);
-                return;
-            }
-        }
+        items.remove(product);
+    }
+            
+    public double getTotal(){
+        double totalPrice = 0;
+        for (Map<K,V>.Entry<Product,Integrer> entry : items.entryset())
+            totalPrice += entry.getKey().getprice()* entry.getValue();
+        return totalPrice;
     }
 }
 
