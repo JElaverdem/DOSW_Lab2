@@ -1,5 +1,6 @@
 package main.java.edu.eci.dosw.reto1;
 
 public interface Discount{
-    int excute(Cart cart);
+    double execute(Cart cart);
+    double getDiscount(Cart cart);
 }

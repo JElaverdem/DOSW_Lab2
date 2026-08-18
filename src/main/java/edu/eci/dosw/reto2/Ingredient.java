@@ -1,4 +1,14 @@
 public class Ingredient {
-    protected int amount;
-    
+    public String name;
+    public double price;
+    public Ingredient(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+    public String getname() {
+        return name;
+    }
+    public double getprice() {
+        return price;
+    }
 }
