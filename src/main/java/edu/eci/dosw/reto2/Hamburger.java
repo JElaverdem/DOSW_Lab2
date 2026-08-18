@@ -7,7 +7,7 @@ package main.java.edu.eci.dosw.reto2;
 
 public class Hamburger {
     List<Ingredient> ingredients;
-    public Hamburger(List<Ingredient> ingredients;) { 
+    public Hamburger() { 
         ingredients = new ArrayList<>();
     }
     public List<Ingredient> getIngredients() {
@@ -24,7 +24,7 @@ public class Hamburger {
         String summary = "your hamburger contains: ";
         for (Ingredient ingredient : ingredients) {
             summary += ingredient.getname() + " ($" + ingredient.getprice() + ")\n "; }
-        summary += "Total: $" + calculateTotalPrice();
+        summary += "Total: $" + calculatePrice();
         return summary;
     }
     
