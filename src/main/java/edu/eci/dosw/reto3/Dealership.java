@@ -1,5 +1,43 @@
 package eci.dosw.reto3;
+import java.util.ArrayList;
 
-public class Dealership {
-    
+public class Dealership {   
+    private ArrayList<Vehicle> shoppingCart;
+
+    public Dealership(){
+        this.shoppingCart = new ArrayList<>();
+    }
+
+    public void orderVehicle(VehicleFactory factory, String type, String vehicle){
+        if (factory != null && type != null && vehicle != null){
+            if (type.equals("Air")){
+                shoppingCart.add(factory.createAirVehicle(vehicle));
+            }
+            else if (type.equals("Land")){
+                shoppingCart.add(factory.createLandVehicle(vehicle));
+            }
+            else if(type.equals("Water")){
+                shoppingCart.add(factory.createWaterVechile(vehicle));
+            }
+        }
+    }
+
+    public double calculateTotal(){
+        double total = shoppingCart.stream().mapToDouble(Vehicle::getPrice()).sum();
+        return total;
+    }
+
+    public String getDescriptions(){
+        StringBuilder completeString = new StringBuilder();
+
+        shoppingCart.stream().forEach(
+                                x -> {
+                                    completeString.append(x.getType());
+                                    completeString.append(x.getCategory());
+                                    completeString.append(x.getMaxSpeed());
+                                    completeString.append(x.getPrice());
+                                    completeString.append(x.getSpecialEquipment());
+                                }
+                            );
+    }
 }
