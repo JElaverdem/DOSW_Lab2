@@ -1,10 +1,12 @@
 package main.java.edu.eci.dosw.reto1;
+import java.util.ArrayList;
 
 public class Customer {
+
   private String name;
   private Discount discount;
   private static int generalId=1;
-  private String id;
+  private int id;
   private Cart cart;
   public Customer(String name){
     this.name=name;
@@ -21,10 +23,19 @@ public class Customer {
         this.discount=new NoDiscount();
 
   }}
-  public int applyDiscount(){
+  public double applyDiscount(){
     return this.discount.execute(getCart());
   }
-  public String getId(){
+
+  public double getDiscount(){
+    return this.discount.getDiscount(getCart());
+  }
+
+  public double getTotalCart(){
+    return getCart().getTotal();
+  }
+  
+  public int getId(){
     return this.id;
   }
   public Cart getCart(){
@@ -34,4 +45,11 @@ public class Customer {
     return this.name;
   }
 
+  public void addItem(Product item, int quantity){
+    getCart().addItem(item, quantity);
+  }
+
+  public ArrayList<Product> getItems(){
+    
+  }
 }
