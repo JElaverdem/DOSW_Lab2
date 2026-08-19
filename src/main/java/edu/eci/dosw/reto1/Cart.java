@@ -1,11 +1,12 @@
 package main.java.edu.eci.dosw.reto1;
-import java.util.hashMap;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Cart {
-    public Map<> items;
+    public Map<Product, Integer> items;
     public Cart(){
-    this.items = new hashMap<>();
+    this.items = new HashMap<>();
     }
     
     public void addItem(Product product, int quantity) {
@@ -20,9 +21,13 @@ public class Cart {
             
     public double getTotal(){
         double totalPrice = 0;
-        for (Map<K,V>.Entry<Product,Integrer> entry : items.entryset())
-            totalPrice += entry.getKey().getprice()* entry.getValue();
+        for (Map.Entry<Product,Integer> entry : items.entrySet())
+            totalPrice += entry.getKey().getPrice()* entry.getValue();
         return totalPrice;
+    }
+    public ArrayList<Product> getItems(){
+        ArrayList<Product>result=new ArrayList<>(items.keySet());
+        return result;
     }
 }
 
