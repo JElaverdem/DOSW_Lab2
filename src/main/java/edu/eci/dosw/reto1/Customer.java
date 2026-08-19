@@ -50,6 +50,6 @@ public class Customer {
   }
 
   public ArrayList<Product> getItems(){
-    
+    return this.cart.getItems();
   }
 }
