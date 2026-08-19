@@ -1,14 +1,14 @@
 package main.java.edu.eci.dosw.reto2;
 
 public abstract class HamburgerBuilder implements FoodBuilder{
-    protected Burger burger;
+    protected Hamburger burger;
 
     public HamburgerBuilder(){
         this.reset();
     }
 
     public void reset(){
-        this.burger = new Burger();
+        this.burger = new Hamburger();
     }
 
     public abstract void addBread(Ingredient bread);
@@ -19,8 +19,8 @@ public abstract class HamburgerBuilder implements FoodBuilder{
 
     public abstract void addSauce(Ingredient sauce);
 
-    public Burger build(){
-        Burger result = this.burger;
+    public Hamburger build(){
+        Hamburger result = this.burger;
         this.reset();
 
         return result;

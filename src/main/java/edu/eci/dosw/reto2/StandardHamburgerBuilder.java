@@ -26,9 +26,9 @@ public class StandardHamburgerBuilder extends HamburgerBuilder{
     }
 
     @Override
-    public Burger build(){
-        Burger result = super.build();
-        result.addIngredients(this.ingredients);
+    public Hamburger build(){
+        Hamburger result = super.build();
+        result.setIngredients(this.ingredients);
         
         return result;
     }

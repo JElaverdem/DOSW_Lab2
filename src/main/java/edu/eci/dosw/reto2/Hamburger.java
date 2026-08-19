@@ -1,9 +1,10 @@
+package main.java.edu.eci.dosw.reto2;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import main.java.edu.eci.dosw.reto2.Ingredient;
 
-package main.java.edu.eci.dosw.reto2;
 
 public class Hamburger {
     List<Ingredient> ingredients;
@@ -13,7 +14,7 @@ public class Hamburger {
     public List<Ingredient> getIngredients() {
         return ingredients;
     }
-    public double calculateprice() {
+    public double calculatePrice() {
         double totalPrice = 0;
         for (Ingredient ingredient : ingredients) {
             totalPrice += ingredient.getprice();
