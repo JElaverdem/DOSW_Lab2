@@ -1,4 +1,4 @@
-package eci.dosw.reto7;
+package edu.eci.dosw.reto7;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,6 @@ public class RemoteControl {
         for (int i = history.size() - 1; i >= 0; i--) {
             ActionRecord record = history.get(i);
             if (!record.isUndone()) {
-                // AQUÍ ESTÁ LA LÍNEA QUE FALTABA
                 record.getCommand().undo(); 
                 
                 record.markAsUndone();
@@ -36,10 +35,9 @@ public class RemoteControl {
     }
 
     public void printSummary() {
-        System.out.println("--- Remote Control record ---");
         for (ActionRecord record : history) {
             String estado = record.isUndone() ? "[UNDONE]" : "[ACTIVE]";
-            System.out.println(estado + " Action by user.");
+            System.out.println(estado + " Action by user: " + record.getUser().getName());
         }
     }
 }
