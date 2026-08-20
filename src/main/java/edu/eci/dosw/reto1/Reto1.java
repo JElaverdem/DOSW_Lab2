@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto1;
+package edu.eci.dosw.reto1;
 
 public class Reto1 {
     public static void main(String[] args){

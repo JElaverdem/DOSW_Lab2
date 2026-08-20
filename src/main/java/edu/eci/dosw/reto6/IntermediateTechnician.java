@@ -1,4 +1,4 @@
-package eci.dosw.reto6;
+package edu.eci.dosw.reto6;
 
 public class IntermediateTechnician extends SupportHandler{
     public IntermediateTechnician(String nameParam){
@@ -7,11 +7,10 @@ public class IntermediateTechnician extends SupportHandler{
 
     @Override
     public void handleTicket(Ticket ticket){
-        if (ticket.getLevel().ordinal() <= TicketL.INTERMEDIATE.ordinal() && ticket.getPriority().ordinal() < TicketPriority.MEDIUM.ordinal()){
+        if (ticket.getLevel() == TicketL.INTERMEDIATE && ticket.getPriority() == TicketPriority.MEDIUM){
             ticket.markAsResolved(getName());
         }
-        else{
-            ticket.escalated();
+        else if (getNext() != null){
             getNext().handleTicket(ticket);
         }
     }

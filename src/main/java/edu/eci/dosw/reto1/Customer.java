@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto1;
+package edu.eci.dosw.reto1;
 import java.util.ArrayList;
 
 public class Customer {
@@ -50,6 +50,6 @@ public class Customer {
   }
 
   public ArrayList<Product> getItems(){
-    
+    return new ArrayList<>(getCart().items.keySet());
   }
 }
