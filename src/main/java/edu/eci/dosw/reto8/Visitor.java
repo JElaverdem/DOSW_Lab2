@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto8;
+package eci.dosw.reto8;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package edu.eci.dosw.reto8;
+package eci.dosw.reto8;
 
 public enum HealthStatus {
     HEALTHY,
