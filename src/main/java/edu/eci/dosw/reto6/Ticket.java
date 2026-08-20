@@ -1,5 +1,4 @@
-import eci.dosw.reto6.TicketL;
-import eci.dosw.reto6.TicketPriority;
+package edu.eci.dosw.reto6;
 
 public class Ticket {
     private String description;

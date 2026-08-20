@@ -1,7 +1,7 @@
-package eci.dosw.reto6;
+package edu.eci.dosw.reto6;
 
 public enum TicketL {
-    BASI,C
+    BASIC,
     INTERMEDIATE,
     ADVANCED
 }

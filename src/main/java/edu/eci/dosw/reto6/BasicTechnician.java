@@ -1,4 +1,4 @@
-package eci.dosw.reto6;
+package edu.eci.dosw.reto6;
 
 public class BasicTechnician extends SupportHandler{
     public BasicTechnician(String nameParam){
@@ -7,11 +7,10 @@ public class BasicTechnician extends SupportHandler{
 
     @Override
     public void handleTicket(Ticket ticket){
-        if (ticket.getLevel().ordinal() <= TicketL.BASIC.ordinal() && ticket.getPriority().ordinal() <= TicketPriority.LOW.ordinal()){
+        if (ticket.getLevel() == TicketL.BASIC && ticket.getPriority() == TicketPriority.LOW){
             ticket.markAsResolved(getName());
         }
-        else{
-            ticket.escalated();
+        else if (getNext() != null){
             getNext().handleTicket(ticket);
         }
     }
