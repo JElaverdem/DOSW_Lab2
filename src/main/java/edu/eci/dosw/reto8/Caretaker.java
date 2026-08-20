@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto8;
+package eci.dosw.reto8;
 
 import java.util.ArrayList;
 
@@ -28,7 +28,7 @@ public class Caretaker {
         animal.eat();
     }
     public void bathe(Animal animal ){
-        animal.setHealthStatus(HEALTHY);
+        animal.setHealthStatus(HealthStatus.HEALTHY);
     }
     public void cleanHabitat(Habitat habitat){
         habitat.clean();
