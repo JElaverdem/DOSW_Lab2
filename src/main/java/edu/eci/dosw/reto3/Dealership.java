@@ -23,7 +23,7 @@ public class Dealership {
     }
 
     public double calculateTotal(){
-        double total = shoppingCart.stream().mapToDouble(Vehicle::getPrice()).sum();
+        double total = shoppingCart.stream().mapToDouble(Vehicle::getPrice).sum();
         return total;
     }
 
@@ -33,11 +33,20 @@ public class Dealership {
         shoppingCart.stream().forEach(
                                 x -> {
                                     completeString.append(x.getType());
+                                    completeString.append("\n");
                                     completeString.append(x.getCategory());
+                                    completeString.append("\n");
                                     completeString.append(x.getMaxSpeed());
+                                    completeString.append("\n");
                                     completeString.append(x.getPrice());
+                                    completeString.append("\n");
                                     completeString.append(x.getSpecialEquipment());
+                                    completeString.append("\n");
+                                    completeString.append("\n");
                                 }
-                            );
+        );
+
+        return completeString.toString();
     }
+    
 }
