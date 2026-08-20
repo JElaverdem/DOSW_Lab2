@@ -5,6 +5,10 @@ public class Dealership {
     private ArrayList<Vehicle> shoppingCart;
 
     public Dealership(){
+        resetCart();
+    }
+
+    public void resetCart(){
         this.shoppingCart = new ArrayList<>();
     }
 
