@@ -1,4 +1,4 @@
-package eci.dosw.reto7;
+package edu.eci.dosw.reto7;
 
 public class TurnOnLightCommand implements Command{
     private Light light;

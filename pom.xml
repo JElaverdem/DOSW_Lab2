@@ -1,8 +1,12 @@
 <project>
 <modelVersion>4.0.0</modelVersion>
 <groupId>LaverdeFierroRivera</groupId>
-<artifcatId>lab02DOSW</artifactId>
+<artifactId>lab02DOSW</artifactId>
 <version>1.0.0</version>
+<properties>
+	<maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 <!--Dependencias-->
 <dependencies>
     

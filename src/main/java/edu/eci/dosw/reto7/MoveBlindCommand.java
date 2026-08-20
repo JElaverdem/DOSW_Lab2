@@ -1,4 +1,4 @@
-package eci.dosw.reto7;
+package edu.eci.dosw.reto7;
 
 public class MoveBlindCommand implements Command{
     private WindowBlind blind;
@@ -10,7 +10,7 @@ public class MoveBlindCommand implements Command{
             this.newPosition = position;
         }
     
-    @override
+    @Override
     public void execute(){
         this.previousPosition = blind.getPosition();
         this.blind.setPosition(newPosition);

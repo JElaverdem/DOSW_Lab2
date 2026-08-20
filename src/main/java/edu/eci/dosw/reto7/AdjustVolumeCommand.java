@@ -1,6 +1,4 @@
-package eci.dosw.reto7;
-
-import eci.dosw.reto7.MusicSystem;
+package edu.eci.dosw.reto7;
 
 public class AdjustVolumeCommand implements Command{
     private MusicSystem musicSystem;
@@ -11,10 +9,12 @@ public class AdjustVolumeCommand implements Command{
         previousVolume=(this.musicSystem.getVolume());
         newVolume=volume;
     }
+    @Override
     public void execute(){
         previousVolume=(this.musicSystem.getVolume());
         musicSystem.setVolume(newVolume);
     }
+    @Override
     public void undo(){
         musicSystem.setVolume(previousVolume);
         previousVolume=newVolume;
