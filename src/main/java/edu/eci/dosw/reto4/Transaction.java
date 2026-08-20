@@ -1,6 +1,6 @@
-package main.java.edu.eci.dosw.reto4;
+package eci.dosw.reto4;
 
-public class Transaction implements ExchangeStrategy{
+public class Transaction{
     private double originalAmount;
     private double convertedAmount;
     private Currency sourceCurrency;
