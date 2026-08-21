@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-Laboratory 2 — Maven
-=======
 Laboratory 2— Maven
->>>>>>> feature/Reto5
 
 Team Members
 |-----------------------------|-------------------------------------|-----------------|
@@ -117,9 +113,3 @@ Juan José Rivera Lopez
 
 Brian Steven Fierro Lechuga
 
-
-
-=======
-# Challenge 5 — Customized Coffee
-We will use the "Collector" Design, in this case, we will use the different functions through CoffeeBuilder, then, we add the different topics.
->>>>>>> feature/Reto5
