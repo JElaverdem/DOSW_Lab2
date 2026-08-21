@@ -1,6 +1,8 @@
+package eci.dosw.reto3;
+
 public class Car extends LandVehicle {
-    public Car(int wheels, String terrainType) {
-        super(wheels, terrainType);
+    public Car(String type, String category, double maxSpeed, double price, String specialEquipment) {
+        super(type, category, maxSpeed, price, specialEquipment);
     }
     @Override
     public void start() {
@@ -12,7 +14,7 @@ public class Car extends LandVehicle {
     }
     @Override
     public String getSpecs() {
-        return "Automóvil de " + getWheels() + " ruedas, diseñado para terreno: " + terrainType;
+        return "Automóvil (" + getCategory() + "). Maximum speed: " + getMaxSpeed() + " km/h. Equipment: " + getSpecialEquipment();
     }
 }
 

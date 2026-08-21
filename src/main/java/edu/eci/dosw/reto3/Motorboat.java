@@ -1,7 +1,7 @@
 package eci.dosw.reto3;
 public class Motorboat extends WaterVehicle {
-    public Motorboat(String category, double maxSpeed, double price, String specialEquipment) {
-        super("Motorboat", category, maxSpeed, price, specialEquipment);
+    public Motorboat(String type, String category, double maxSpeed, double price, String specialEquipment) {
+        super(type, category, maxSpeed, price, specialEquipment);
     }
 
     @Override

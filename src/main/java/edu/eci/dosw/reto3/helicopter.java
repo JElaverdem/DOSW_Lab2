@@ -1,7 +1,7 @@
 package eci.dosw.reto3;
 public class Helicopter extends AirVehicle {
-    public Helicopter(double maxAltitude, int engines) {
-        super(maxAltitude, engines);
+    public Helicopter(String type, String category, double maxSpeed, double price, String specialEquipment) {
+        super(type, category, maxSpeed, price, specialEquipment);
     }
     @Override
     public void start() {
@@ -15,7 +15,7 @@ public class Helicopter extends AirVehicle {
 
     @Override
     public String getSpecs() {
-        return "Helicopter with " + engines + " engine. maximun high : " + getMaxAltitude() + " ft.";
+        return "Helicopter (" + getCategory() + "). Maximum speed: " + getMaxSpeed() + " km/h. Equipment: " + getSpecialEquipment();
     }
     @Override
     public String getType() { return super.getType(); }

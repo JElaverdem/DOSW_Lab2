@@ -1,13 +1,51 @@
-package main.java.edu.eci.dosw.reto3;
+package eci.dosw.reto3;
 
 public class LuxuryFactory implements VehicleFactory{
+    public LuxuryFactory(){
+
+    }
     public LandVehicle createLandVehicle(String vehicle){
-        LandVehicle LandVehicle= new LandVehicle(vehicle, "Luxury", 90, 300, "no");
+        LandVehicle landVehicle = null;
+        if (vehicle.equals("Car")){
+            landVehicle = new Car(vehicle, "Luxury", 90, 300, "no");
+        }
+        else if(vehicle.equals("Bicycle")){
+            landVehicle = new Bicycle(vehicle, "Luxury", 90, 300, "no");
+        }
+        else if(vehicle.equals("Motorcycle")){
+            landVehicle = new Bicycle(vehicle, "Luxury", 90, 300, "no");
+        }
+        return landVehicle;
     }
+
     public AirVehicle createAirVehicle(String vehicle){
-        AirVehicle AirVehicle= new AirVehicle(vehicle, "Luxury", 90, 300, "no");
+        AirVehicle airVehicle = null;
+        if (vehicle.equals("Airplane")){
+            airVehicle = new Airplane(vehicle, "Luxury", 90, 300, "no");
+        }
+        else if(vehicle.equals("Helicopter")){
+            airVehicle = new Helicopter(vehicle, "Luxury", 90, 300, "no");
+        }
+        else if(vehicle.equals("LightAircraft")){
+            airVehicle = new LightAircraft(vehicle, "Luxury", 90, 300, "no");
+        }
+
+        return airVehicle;
     }
+
     public WaterVehicle createWaterVechile(String vehicle){
-        WaterVehicle WaterVehicle= new WaterVehicle(vehicle, "Luxury", 90, 300, "no");
+        WaterVehicle waterVehicle = null;
+
+        if (vehicle.equals("JetSki")){
+            waterVehicle = new JetSki(vehicle, "Luxury", 90, 300, "no");
+        }
+        else if(vehicle.equals("Motorboat")){
+            waterVehicle = new Motorboat(vehicle, "Luxury", 90, 300, "no");
+        }
+        else if(vehicle.equals("Sailboat")){
+            waterVehicle = new Sailboat(vehicle, "Luxury", 90, 300, "no");
+        }
+
+        return waterVehicle;
     }
 }

@@ -1,7 +1,7 @@
 package eci.dosw.reto3;
 public class Airplane extends AirVehicle {
-    public Airplane(String category, double maxSpeed, double price, String specialEquipment) {
-        super("Airplane", category, maxSpeed, price, specialEquipment);
+    public Airplane(String type, String category, double maxSpeed, double price, String specialEquipment) {
+        super(type, category, maxSpeed, price, specialEquipment);
     }
 
     @Override

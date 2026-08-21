@@ -1,6 +1,6 @@
 package eci.dosw.reto3;
 public class Bicycle extends LandVehicle {
-    public Bicycle(String category, double maxSpeed, double price, String specialEquipment) {
+    public Bicycle(String type, String category, double maxSpeed, double price, String specialEquipment) {
         super("Bicycle", category, maxSpeed, price, specialEquipment);
     }
 
@@ -18,18 +18,6 @@ public class Bicycle extends LandVehicle {
     public String getSpecs() {
         return "Bicycle (" + getCategory() + "). Maximum speed: " + getMaxSpeed() + " km/h. Equipment: " + getSpecialEquipment();
     }
-
-    @Override
-    public String getType() { return super.getType(); }
-
-    @Override
-    public String getCategory() { return super.getCategory(); }
-
-    @Override
-    public double getMaxSpeed() { return super.getMaxSpeed(); }
-
-    @Override
-    public double getPrice() { return super.getPrice(); }
 
     @Override
     public String getSpecialEquipment() { return super.getSpecialEquipment(); }

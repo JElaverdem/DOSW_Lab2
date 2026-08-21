@@ -3,7 +3,7 @@ package eci.dosw.reto3;
 public interface Vehicle {
     void start();
     void stop();
-    string getSpects();
+    String getSpecs();
     String getType();
     String getCategory();
     double getMaxSpeed();

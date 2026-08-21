@@ -1,7 +1,7 @@
 package eci.dosw.reto3;
 public class JetSki extends WaterVehicle {
-    public JetSki(String category, double maxSpeed, double price, String specialEquipment) {
-        super("JetSki", category, maxSpeed, price, specialEquipment);
+    public JetSki(String type, String category, double maxSpeed, double price, String specialEquipment) {
+        super(type, category, maxSpeed, price, specialEquipment);
     }
 
     @Override
