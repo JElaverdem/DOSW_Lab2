@@ -1,9 +1,7 @@
-package main.java.edu.eci.dosw.reto2;
+package eci.dosw.reto2;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import main.java.edu.eci.dosw.reto2.Ingredient;
 
 
 public class Hamburger {

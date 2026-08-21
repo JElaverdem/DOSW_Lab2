@@ -1,7 +1,7 @@
-package main.java.edu.eci.dosw.reto2;
+package eci.dosw.reto2;
 
 public class Reto2 {
-    public static void main(String[] args){
+    public static void run(){
         //First we create the ingredients
         Ingredient bread= new Ingredient("brioche", 29);
         Ingredient meat= new Ingredient("beef", 18);

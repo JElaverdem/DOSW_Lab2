@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto2;
+package eci.dosw.reto2;
 import java.util.ArrayList;
 
 public class StandardHamburgerBuilder extends HamburgerBuilder{

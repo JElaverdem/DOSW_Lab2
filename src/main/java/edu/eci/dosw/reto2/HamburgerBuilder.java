@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto2;
+package eci.dosw.reto2;
 
 public abstract class HamburgerBuilder implements FoodBuilder{
     protected Hamburger burger;
