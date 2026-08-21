@@ -1,6 +1,6 @@
-package main.java.edu.eci.dosw.reto8;
+package eci.dosw.reto8;
 public class Reto8{
-    public static void main(String[] args) {
+    public static void run() {
         Caretaker ct= new Caretaker("Juan", 40, "Veterinarian");
         System.out.println(ct.getName());
         System.out.println(ct.getAge());

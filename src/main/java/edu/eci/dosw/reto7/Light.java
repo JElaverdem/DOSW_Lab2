@@ -1,4 +1,4 @@
-package edu.eci.dosw.reto7;
+package eci.dosw.reto7;
 
 public class Light {
 	private boolean on;
