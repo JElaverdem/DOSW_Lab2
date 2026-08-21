@@ -54,7 +54,8 @@ Contributions:
 Pattern category: Behavioral.
 Pattern used: Strategy.
 Pattern justification:
-Pattern application:
+For the fourth challenge, we developed a currency converter that uses real and accurate exchange rates for each currency, rather than a single shared rate for all of them. The system allows users to trade in various currencies—such as USD, EUR, JPY, and COP—and manage multiple transactions simultaneously. To achieve this, we used *Java Streams* to easily group and calculate total amounts. We also applied design patterns to keep the conversion rules separate and organized, ensuring clean code.
+Pattern application:We used the Strategy pattern to apply different exchange rates dynamically without messy code.
 Contributions:
 -Juan José Rivera: Currency, Challenge.
 -Juan Esteban Laverde: Transaction, ExternalRateAdapter.
@@ -76,7 +77,8 @@ Contributions:
 Pattern category: Behavioral.
 Pattern used: Chain of responsibility.
 Pattern justification:
-Pattern application:
+Challenge sixth involves a technical support system that manages incidents (tickets) of varying difficulty levels—basic, intermediate, and advanced—and different priorities. We use the “chain of responsibility” pattern and that when a technician cannot resolve an incident, it is automatically transferred to the next technician capable of handling it. We then use Java Streams to calculate statistics, as the number of resolved incidents, the number of pending incidents, and the average priority.
+Pattern application:We applied the Chain of Responsibility pattern so that unresolved support tickets automatically pass to the next technician.
 Contributions:
 -Juan José Rivera: SupportManager, TicketL, Challenge.
 -Juan Esteban Laverde: Ticket, TicketPriority.
@@ -86,7 +88,9 @@ Contributions:
 [Challenge 7 evidence](resources/challenge7.png)
 Pattern category: Behavioral.
 Pattern used: Command.
-Pattern justification:
+Pattern justification:We used the Command pattern to turn every remote action into an object that we can track and undo easily.
+In Challenge seveth, we created a remote control capable of performing actions such as turning on lights, opening doors, adjusting the music volume, or moving the blinds. We used the Command pattern so that each action is saved as an object. This allows us to maintain a complete history of the actions performed, identify which user modified each device, and use an undo button to reverse any action if necessary.
+Pattern justification:We used the Command pattern to turn every remote action into an object that we can track and undo easily.
 Pattern application:
 Contributions:
 -Juan José Rivera: User, Door, OperateDoorCommand, RemoteControl, MoveBlindCommand, Challenge.
