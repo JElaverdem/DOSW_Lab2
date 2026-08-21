@@ -1,30 +1,29 @@
 package edu.eci.dosw.reto7;
 
-import java.time.LocalDateTime;
-
 public class ActionRecord {
-    private User user;
-    private Command command;
-    private boolean undone;
-    private LocalDateTime timestamp;
-    public ActionRecord(User user, Command command){
-        this.user=user;
-        this.command=command;
-        this.undone = false;
-        this.timestamp=LocalDateTime.now();
-    }
-    public boolean isUndone(){
-        return this.undone;
-    }
-    public void markAsUndone(){
-        this.undone = true;
-    }
-    public Command getCommand() {
-        return this.command;
-    }
+	private final User user;
+	private final Command command;
+	private boolean undone;
 
-    public User getUser() {
-        return this.user;
-    }
+	public ActionRecord(User user, Command command) {
+		this.user = user;
+		this.command = command;
+	}
+
+	public boolean isUndone() {
+		return undone;
+	}
+
+	public void markAsUndone() {
+		undone = true;
+	}
+
+	public Command getCommand() {
+		return command;
+	}
+
+	public User getUser() {
+		return user;
+	}
 }
 

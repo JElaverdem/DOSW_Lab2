@@ -14,12 +14,12 @@ public class MoveBlindCommand implements Command{
     public void execute(){
         this.previousPosition = blind.getPosition();
         this.blind.setPosition(newPosition);
-        System.out.println("the WindowsBlind has been moved to" + newPosition + "%");
+        System.out.println("The window blind moved to " + newPosition + "%.");
         
     }
     @Override
     public void undo(){
         this.blind.setPosition(previousPosition);
-        System.out.println("the WindowsBlind has been moved to" + previousPosition + "%");
+        System.out.println("The window blind returned to " + previousPosition + "%.");
     }
 }

@@ -37,7 +37,8 @@ public class RemoteControl {
     public void printSummary() {
         for (ActionRecord record : history) {
             String estado = record.isUndone() ? "[UNDONE]" : "[ACTIVE]";
-            System.out.println(estado + " Action by user: " + record.getUser().getName());
+            String action = record.getCommand().getClass().getSimpleName();
+            System.out.println(estado + " " + action + " by user: " + record.getUser().getName());
         }
     }
 }
