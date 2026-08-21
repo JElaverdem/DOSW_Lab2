@@ -1,7 +1,7 @@
-package main.java.edu.eci.dosw.reto1;
+package eci.dosw.reto1;
 
 public class Reto1 {
-    public static void main(String[] args){
+    public static void run(){
         Customer custom1=new Customer("Pedro");
         Product papa = new Product("papa", "Una papa natural de la mejor calidad", 500);
         custom1.addItem(papa, 5);

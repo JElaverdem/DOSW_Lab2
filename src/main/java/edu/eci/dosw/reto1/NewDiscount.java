@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto1;
+package eci.dosw.reto1;
 
 public class NewDiscount implements Discount{
     public NewDiscount (){

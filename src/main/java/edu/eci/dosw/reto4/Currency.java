@@ -1,3 +1,5 @@
+package eci.dosw.reto4;
+
 public enum Currency {
     USD(1),
     EUR(2),

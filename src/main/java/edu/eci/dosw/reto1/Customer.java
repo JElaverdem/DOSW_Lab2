@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto1;
+package eci.dosw.reto1;
 import java.util.ArrayList;
 
 public class Customer {
