@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Laboratory 2 — Maven
+=======
+Laboratory 2— Maven
+>>>>>>> feature/Reto5
 
 Team Members
 |-----------------------------|-------------------------------------|-----------------|
@@ -8,6 +12,7 @@ Team Members
 | Juan Esteban Laverde Mesa   |juan.lmesa@mail.escuelaing.edu.co    | JElaverdem      |
 | Brian Steven Fierro Lechuga |brian.fierro-l@mail.escuelaing.edu.co| BrianFierro03   |
 |-----------------------------|-------------------------------------|-----------------|
+<<<<<<< HEAD
 
  Challenge Evidence & Technical Explanations
 
@@ -110,3 +115,7 @@ Brian Steven Fierro Lechuga
 
 
 
+=======
+# Challenge 5 — Customized Coffee
+We will use the "Collector" Design, in this case, we will use the different functions through CoffeeBuilder, then, we add the different topics.
+>>>>>>> feature/Reto5
