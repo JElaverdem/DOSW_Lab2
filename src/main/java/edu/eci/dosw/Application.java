@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package eci.dosw;
 import eci.dosw.reto1.Reto1;
 import eci.dosw.reto2.Reto2;
@@ -30,3 +31,14 @@ public class Application {
 	}
 }
 >>>>>>> feature/Reto6
+=======
+package edu.eci.dosw;
+
+import edu.eci.dosw.reto7.Reto7;
+
+public class Application {
+	public static void main(String[] args) {
+		Reto7.run();
+	}
+}
+>>>>>>> feature/Reto7
