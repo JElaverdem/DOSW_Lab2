@@ -1,6 +1,9 @@
+package eci.dosw.reto5;
 import java.util.stream.Collectors;
+import java.util.stream.Collector;
+
  public class CoffeeCollector{
-    public collector<Coffee, ?, Double> summarizeTotals() {
+    public Collector<Coffee, ?, Double> summarizeTotals() {
         return Collectors.summingDouble(Coffee::getTotalPrice);
     }
  }

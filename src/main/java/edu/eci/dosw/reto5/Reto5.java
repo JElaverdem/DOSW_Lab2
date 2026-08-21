@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto5;
+package eci.dosw.reto5;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 public class Reto5{
-    public static void main(String[] args) {
+    public static void run() {
           Scanner scanner= new Scanner(System.in);
           List<Coffee> coffees= new ArrayList<>();
           Map<String, Topping> toppings= new HashMap<>();

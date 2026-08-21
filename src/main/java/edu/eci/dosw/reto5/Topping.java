@@ -1,4 +1,4 @@
-package main.java.edu.eci.dosw.reto5;
+package eci.dosw.reto5;
 
 public class Topping {
     private String name;
