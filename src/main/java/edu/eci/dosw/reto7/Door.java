@@ -10,9 +10,9 @@ public class Door {
     public void setOpen(boolean open) {
         this.isOpen = open;
         if (open) {
-            System.out.println("La puerta ahora está ABIERTA.");
+            System.out.println("The door is now OPEN.");
         } else {
-            System.out.println("La puerta ahora está CERRADA.");
+            System.out.println("The door is now CLOSED.");
         }
     }
 
